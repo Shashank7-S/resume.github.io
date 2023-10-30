@@ -570,6 +570,15 @@ button:focus {
     .bars {
         display: block;
     }
+    .dropdown-list {
+        display: none;
+    }
+    .horizontal-list {
+        display: block;
+    }
+    .nav-menu {
+        display: none;
+    }
 }
 
 @media (max-width: 768px) {
