@@ -562,22 +562,33 @@ button:focus {
     width: 50%;
 }
 
-@media only screen and (max-width: 572px) {
-    .timeline-box {
-        width: 100%;
-        left: 10% !important;
-    }
+@media only screen and (max-width: 568px) {
     .bars {
         display: block;
+        position: absolute;
+        right: 10px;
+        top: 10px;
     }
     .dropdown-list {
         display: none;
+        position: absolute;
+        top: 55px;
+        right: 10px;
+        background-color: #828470;
+        box-shadow: 0px 4px 8px 1px #535547;
+        z-index: 999;
+        width: 150px;
     }
-    .horizontal-list {
+    .bars i {
+        font-size: 2rem;
+    }
+    .dropdown-list ul {
+        margin: 0.2rem 0.2rem;
+        text-align: left;
+        padding: 0px 0.8rem;
+    }
+    .dropdown-menu:hover .dropdown-list {
         display: block;
-    }
-    .nav-menu {
-        display: none;
     }
 }
 
