@@ -570,9 +570,36 @@ button:focus {
     }
 }
 
-@media only screen and (max-width: 768px) {
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+    /* Update header and navigation for smaller screens */
+    #body-header {
+        height: auto;
+        background-attachment: scroll;
+    }
+    .bars {
+        display: block;
+    }
+    .dropdown-list {
+        display: none;
+    }
+    .horizontal-list {
+        display: none;
+    }
+    .nav-menu {
+        display: block;
+    }
+}
+
+
+/* Adjust specific section styles for smaller screens */
+
+@media (max-width: 572px) {
+    /* Update timeline-box and other relevant styles for mobile */
     .timeline-box {
-        width: 90%;
+        width: 100%;
         left: 10% !important;
     }
     .timeline-box::after {
@@ -582,18 +609,19 @@ button:focus {
         top: 10%;
         left: 2%;
     }
+    /* Update contact form and details container styles for mobile */
     #contact-form {
         margin-left: 0%;
     }
     #contact-container {
-        flex-wrap: wrap;
+        flex-direction: column;
     }
     #my-details-container {
-        width: 80%;
-        margin: 10%;
+        width: 100%;
+        margin: 10px;
     }
     #contact-form-container {
-        width: 80%;
-        margin: 10%;
+        width: 100%;
+        margin: 10px;
     }
 }
