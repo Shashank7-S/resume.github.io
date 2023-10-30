@@ -593,6 +593,22 @@ button:focus {
     .nav-menu {
         display: block;
     }
+    #my-image {
+        height: 8rem;
+        width: 8rem;
+        margin: auto;
+        margin-top: -9vh;
+    }
+    #about-para {
+        padding: 10px;
+        width: 90%;
+    }
+    .skills-display {
+        width: 90%;
+    }
+    #portfolio-container {
+        padding: 0 10px;
+    }
 }
 
 
@@ -609,7 +625,8 @@ button:focus {
     }
     #timeline-divider {
         top: 10%;
-        left: 2%;
+        left: 50%;
+        transform: translateX(-50%);
     }
     /* Update contact form and details container styles for mobile */
     #contact-form {
