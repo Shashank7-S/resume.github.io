@@ -664,12 +664,3 @@ button:focus {
         margin: 10px;
     }
 }
-
-@media only screen and (min-width: 569px) {
-    .bars {
-        display: none;
-    }
-    .dropdown-list {
-        display: block;
-    }
-}
